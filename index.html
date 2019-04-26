@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fixed.css">
+    <title>4月你好</title>
+</head>
+<body>
+    <div class="header">
+        <div class="nav">
+            <ul>
+                <li><a href="dabian\wodeguanwang\nishuihan.html">首页</a></li>
+                <li><a href="javascript:;">加入我</a></li>
+                <li><a href="javascript:;">作品</a></li>
+            </ul>
+			<div class="sousuo">    
+				<input type="text" id="tst">
+				<input type="button" id="btn">
+			</div>
+        </div>
+    </div>
+    <div id="helloweb">
+            <!-- 四个盒子，每个盒子一张图 -->
+            <div class="size one">
+                <a href="D:\H5\css3\4月\项目答辩\wodeguanwang\nishuihan.html"> <span>个</span></a>
+		        <video src="images/jl.mp4" width="100%" height="100%" muted autoplay loop class="video"></video>
+
+            </div>
+            <div class="size two">
+                <a href="D:\H5\css3\4月\项目答辩\wodeguanwang\nishuihan.html"><span>人</span></a>
+		        <video src="images/jl.mp4" width="100%" height="100%" muted autoplay loop class="video"></video>
+            </div>
+            <div class="size three">
+                <a href="D:\H5\css3\4月\项目答辩\wodeguanwang\nishuihan.html"><span>网</span></a>
+		        <video src="images/jl.mp4" width="100%" height="100%" muted autoplay loop class="video"></video>
+
+            </div>
+            <div class="size four">
+                <a href="D:\H5\css3\4月\项目答辩\wodeguanwang\nishuihan.html"><span>游戏模仿</span> </a>
+		        <video src="images/jl.mp4" width="100%" height="100%" muted autoplay loop class="video"></video>
+
+            </div>
+        </div>
+</body>
+<script src="../jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/fixed.js"></script>
+<!-- <script>
+    new Topfixed($("header")).init();
+
+    var styleData =  [{
+        rotateY:35,
+        translateX:-400,
+        translateZ:-400,
+        zIndex:555
+    },{
+        rotateY:35,
+        translateX:-300,
+        translateZ:-300,
+        zIndex:666
+    },{
+        rotateY:35,
+        translateX:-200,
+        translateZ:-200,
+        zIndex:777
+
+    },{
+        rotateY:35,
+        translateX:-100,
+        translateZ:-100,
+        zIndex:888
+    },{
+        rotateY:0,
+        translateX:0,
+        translateZ:150,
+        zIndex:999
+    },{
+        rotateY:-35,
+        translateX:100,
+        translateZ:-100,
+        zIndex:888
+    },{
+        rotateY:-35,
+        translateX:200,
+        translateZ:-200,
+        zIndex:777
+    },{
+        rotateY:-35,
+        translateX:300,
+        translateZ:-300,
+        zIndex:666
+    },{
+        rotateY:-35,
+        translateX:400,
+        translateZ:-400,
+        zIndex:555
+    }
+       ];
+        var current = 2;
+        setStyle();
+        var lock = true;
+        var time = null;
+        time = setInterval(function(){
+            current--;
+            if(current<0){
+               current=4;
+           }
+            setStyle();
+        },5000);
+       $("#btnleft").on("click",function(){
+           if(!lock){return};
+           current++;
+           if(current>4){
+               current=0;
+           }
+           setStyle();
+           lock = false;
+            setTimeout(function(){
+                lock = true;
+            },1000);
+       });
+       $("#btnright").on("click",function(){
+        if(!lock){return};
+           current--;
+           if(current<0){
+               current=4;
+           }
+           setStyle();
+           lock = false;
+            setTimeout(function(){
+                lock = true;
+            },1000);
+       });
+       function setStyle(){
+        var reallyArry = styleData.slice(current,current+5);
+        $(".box ul li").each(function(index){
+            $(this).css({"transform":"rotateY("+reallyArry[index].rotateY+"deg)"+"translateX("+reallyArry[index].translateX+"px)"+"translateZ("+reallyArry[index].translateZ+"px)","zIndex":reallyArry[index].zIndex});  
+            // transform:rotateY(35deg) translateX(-200px) translateZ(-200px);
+
+        });
+       } -->
+<!-- </script> -->
+</html>
